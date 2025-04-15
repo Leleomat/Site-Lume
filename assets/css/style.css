@@ -10,6 +10,7 @@ html {
   --grayDark: #555;
   --greyMaisDark: #333;
   --creme: #fff5d9;
+  --quente: #e48b00;
 }
 
 body {
@@ -89,14 +90,18 @@ header .container {
   margin: 0 1rem 1rem 1rem;
 }
 
-main{
+.inicio{
+  max-width: 120rem;
+  margin: 1.5rem auto;
+  padding: 2rem;
 }
 
 main h1.titulo {
   font-weight: 600;
-  font-size: 2.2rem;
-  color: var(--black);
+  font-size: 2.4rem;
+  color: var(--quente);
   margin: 1rem 0 0 8rem;
+  text-align: justify;
 }
 
 main .sobreLumeInicio .paragrafo1, .paragrafo2, .paragrafo3, .paragrafo4, .paragrafo5, .paragrafo6{
@@ -105,15 +110,14 @@ main .sobreLumeInicio .paragrafo1, .paragrafo2, .paragrafo3, .paragrafo4, .parag
   display: flex;
   width: 80%;
   height: 100%;
-  font-weight: 300;
   font-size: 2rem;
+  text-align: justify;
 }
 
 main .sobreLumeInicio p{
   margin-left: 8rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-weight: 300;
   font-size: 1.7rem;
 }
 
@@ -201,8 +205,6 @@ main .sobreLumeInicio .paragrafo6{
   max-width: 90rem;
   margin: 1.5rem auto;
   padding: 2rem;
-  font-family: 'Inter', sans-serif;
-  color: var(--greyMaisDark);
 }
 
 .intro {
@@ -211,7 +213,9 @@ main .sobreLumeInicio .paragrafo6{
 }
 
 .intro h2{
-  font-size: 4rem;
+  color: var(--quente);
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
 }
 
 .intro p{
@@ -249,3 +253,105 @@ main .sobreLumeInicio .paragrafo6{
   border-radius: 10px;
   margin-bottom: 1rem;
 }
+
+.linha-divisoria {
+  border: 1px solid;
+  height: 0.2rem;
+  color: var(--gold); /* ou a cor que combine com seu site */
+  margin: 3rem auto;       /* espaço acima e abaixo */
+  width: 100%;              /* largura da linha */
+}
+
+/* COLABORADORES.HTML */
+
+/* Seção de colaboradores */
+.colaboradores-container {
+  max-width: 100rem;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.colaboradores h1 {
+  font-weight: 600;
+  margin: 1rem 0 0.4rem 0rem;
+  color: var(--quente);
+  font-size: 2.4rem; /* tom de destaque quente */
+}
+
+.colaboradores p {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  margin-left: 0.3rem;
+}
+
+.colaborador {
+  background-color: var(--creme);
+  padding: 0.5rem;
+  border-left: 0.5rem solid;
+  border-color: var(--quente);
+  border-radius: 0.8rem;
+  margin: 2rem 0;
+}
+
+.colaborador p{
+  font-size: 1.7rem;
+}
+
+.colaboradores a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.colaboradores a:hover {
+  text-decoration: underline;
+}
+
+/* SOBRE.HTML */
+
+.sobre-container {
+  max-width: 100rem;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.sobreNos h1 {
+  font-weight: 600;
+  margin: 1rem 0 0.4rem 0rem;
+  color: var(--quente);
+  font-size: 2.4rem; /* tom de destaque quente */
+}
+
+.sobreNosText p {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  margin-left: 0.3rem;
+}
+
+.sobre_contact_text{
+  text-align: justify;
+  padding: 0.5rem;
+  border-left: 0.5rem solid;
+  border-color: var(--quente);
+  border-radius: 0.8rem;
+  margin: 2rem 0;
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  margin-left: 0.3rem;
+}
+
+.sobre_contact .title{
+  font-weight: 600;
+  margin: 1rem 0 0.4rem 0rem;
+  color: var(--quente);
+  font-size: 2.4rem;
+}
+
