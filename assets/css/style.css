@@ -96,6 +96,12 @@ header .container {
   padding: 2rem;
 }
 
+.inicio-lumix{
+  max-width: 120rem;
+  margin: 1.5rem auto;
+  padding: 2rem;
+}
+
 main h1.titulo {
   font-weight: 600;
   font-size: 2.4rem;
@@ -104,7 +110,7 @@ main h1.titulo {
   text-align: justify;
 }
 
-main .sobreLumeInicio .paragrafo1, .paragrafo2, .paragrafo3, .paragrafo4, .paragrafo5, .paragrafo6{
+main .sobreLumeInicio .paragrafo1, .paragrafo2, .paragrafo3, .paragrafo4, .paragrafo5, .paragrafo6, .paragrafo0-0, .paragrafo1-0, .paragrafo2-0, .paragrafo3-0, .paragrafo4-0, .paragrafo5-0{
   margin-left: 8rem;
   margin-top: 1.6rem;
   display: flex;
@@ -112,6 +118,25 @@ main .sobreLumeInicio .paragrafo1, .paragrafo2, .paragrafo3, .paragrafo4, .parag
   height: 100%;
   font-size: 2rem;
   text-align: justify;
+}
+
+main .sobreLumeInicio-lumix .paragrafo0-0{
+  font-size: bold;
+}
+
+main .sobreLumeInicio-lumix img{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 1rem 1rem 8rem;
+}
+
+main .sobreLumeInicio-lumix p{
+  margin-left: 8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
 }
 
 main .sobreLumeInicio p{
@@ -401,7 +426,7 @@ main .sobreLumeInicio .paragrafo6{
 }
 
 .carrossel-wrapper img {
-  width: 200px;        /* Diminui a largura */
+  width: 20rem;        /* Diminui a largura */
   height: auto;        /* Altura proporcional */
   object-fit: cover; /* Evita cortes */
   border-radius: 8px;
@@ -438,4 +463,45 @@ main .sobreLumeInicio .paragrafo6{
 
 .carrossel .next {
   right: -2rem;
+}
+
+.equipe-container-lumix {
+  max-width: 90rem;
+  margin: auto;
+  margin-bottom: 0.1rem;
+  margin-top: 0.5rem;
+  padding: 2rem 2rem 0.1rem 2rem;
+}
+
+.equipe-container-lumix .intro p{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.equipe-container-lumix img{
+  width: 100%;
+  height: 100%; 
+  object-fit: contain;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.trabalhos-container-lumix {
+  max-width: 100rem;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.trabalhos-container-lumix p {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  margin-left: 0.3rem;
+}
+
+.textoFinal{
+  text-align: center;
+  font-size: 2.5rem;
 }
