@@ -355,3 +355,87 @@ main .sobreLumeInicio .paragrafo6{
   font-size: 2.4rem;
 }
 
+/* TRABALHOS.HTML */
+
+.trabalhos-container {
+  max-width: 100rem;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.trabalhos h1 {
+  font-weight: 600;
+  margin: 1rem 0 0.4rem 0rem;
+  color: var(--quente);
+  font-size: 2.4rem; /* tom de destaque quente */
+}
+
+.trabalhosText p {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  margin-left: 0.3rem;
+}
+
+.trabalhosText .explore{
+  font-weight: bold;
+}
+
+.carrossel {
+  position: relative;
+  margin: 3rem 0;
+}
+
+.carrossel-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1.6rem;
+  padding: 3rem 3rem 3rem 3rem;
+}
+
+.carrossel-wrapper::-webkit-scrollbar {
+  display: none; /* escondendo a barra de rolagem */
+}
+
+.carrossel-wrapper img {
+  width: 200px;        /* Diminui a largura */
+  height: auto;        /* Altura proporcional */
+  object-fit: cover; /* Evita cortes */
+  border-radius: 8px;
+  flex-shrink: 0;
+  box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.1);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Efeito no hover */
+.carrossel-wrapper img:hover {
+  transform: scale(1.2);         /* aumenta um pouco */
+  object-fit: contain;           /* mostra tudo */
+  background-color: #fff;        /* opcional: fundo branco ao redor */
+  z-index: 10;                   /* garante que fique acima das outras */
+}
+
+.carrossel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffffdd;
+  border: none;
+  padding: 1rem 1.4rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.carrossel .prev {
+  left: -2rem;
+}
+
+.carrossel .next {
+  right: -2rem;
+}
