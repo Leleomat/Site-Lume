@@ -7,13 +7,16 @@ html {
   --black: #000;
   --white: #fff;
   --gray: #e4e4e4;
+  --grayDark: #555;
+  --greyMaisDark: #333;
+  --creme: #fff5d9;
 }
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: var(--white);
+  background-color: var(--creme);
   color: var(--black);
+  font-family: 'Be Vietnam Pro', sans-serif;  
 }
 
 header{
@@ -60,6 +63,7 @@ nav li.bar::before {
 }
 
 nav a {
+  font-size: 1.6rem;
   text-decoration: none;
   color: var(--black);
   font-weight: 600;
@@ -81,7 +85,7 @@ header .container {
 .container img {
   display: flex;
   width: 16rem;
-  height: 16rem;
+  height: 10rem;
   margin: 0 1rem 1rem 1rem;
 }
 
@@ -89,33 +93,159 @@ main{
 }
 
 main h1.titulo {
-  font-weight: 200;
-  font-size: 3.2rem;
+  font-weight: 600;
+  font-size: 2.2rem;
   color: var(--black);
+  margin: 1rem 0 0 8rem;
 }
 
-main span.sobreLumeInicio{
+main .sobreLumeInicio .paragrafo1, .paragrafo2, .paragrafo3, .paragrafo4, .paragrafo5, .paragrafo6{
   margin-left: 8rem;
   margin-top: 1.6rem;
   display: flex;
   width: 80%;
   height: 100%;
   font-weight: 300;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
+main .sobreLumeInicio p{
+  margin-left: 8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
 
-footer {
-  position: fixed;
-  display: flex;
+main .sobreLumeInicio img{
+  display: inline-block;
   align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 1rem 1rem 8rem;
+}
+
+main .sobreLumeInicio .paragrafo2{
+  margin-bottom: 0.8rem;
+}
+
+main .sobreLumeInicio .paragrafo4{
+  margin-top: 0.2rem;
+}
+
+main .sobreLumeInicio .paragrafo5{
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+main .sobreLumeInicio .paragrafo6{
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+}
+
+.disclaimer {
+  display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  background-image: linear-gradient(to right, #c58a43, #e2aa66, #fad4a5);
+  background: #c58a43;
   padding: 1.5008rem 4rem;
   bottom: 0;
   left: 0;
   right: 0;
   text-decoration: none;
+  border-top: #000 solid 0.2rem;
   color: var(--white);
   font-weight: 600;
+  font-size: 1.6rem;
+  gap: 60rem;
+  /* Começa invisível */
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.disclaimer .text{
+  margin-top: 2.5rem;
+  color: #ffffff;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.disclaimer .title{
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.disclaimer .subtitle{
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.disclaimer .contact{
+  align-items: flex-end;
+  text-align: left;
+  font-size: 1.5rem;
+  right: 1rem;
+  width: 100%;
+}
+
+.contact .title{
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* EQUIPE.HTML */
+
+.equipe-container {
+  max-width: 90rem;
+  margin: 1.5rem auto;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: var(--greyMaisDark);
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.intro h2{
+  font-size: 4rem;
+}
+
+.intro p{
+  font-size: 2rem;
+}
+
+.membro {
+  margin-bottom: 4rem;
+}
+
+.membro h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.membro .funcao {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--greyDark);
+}
+
+.membro p {
+  text-align: justify;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: var(--black);
+}
+
+.membro img {
+  width: 100%;
+  max-height: 70rem;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
